@@ -11,7 +11,7 @@ def test_all_on_random_f(algos: List, N: int, n: int, repeats: int):
     gts = []
     approxs = [[] for _ in range(len(algos))]
 
-    rand_nums = rand.randint(2, size=N)
+    rand_nums = (rand.randint(4, size=N) == 0).astype(np.int32)
     for _ in tqdm(range(repeats), desc="Calculating gt. and approx. across random problem instances"):
 
         # Compute the ground truth result.

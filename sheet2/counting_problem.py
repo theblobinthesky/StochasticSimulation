@@ -33,7 +33,7 @@ def naive_monte_carlo(f: Callable[[int, int], int], N: int, num_samples: int, nu
 
     sum = 0
     for rand_num in rand_numbers:
-        sum += f(*rand_num)
+        sum += f(rand_num[0])
 
     return sum * 1.0 / num_samples
 
