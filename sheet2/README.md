@@ -1,3 +1,12 @@
+Results for question `3)`:
+<pre>
+n=   100: est=0.580000, theo=0.607927, error=0.027927
+n=  1000: est=0.597000, theo=0.607927, error=0.010927
+n= 10000: est=0.608600, theo=0.607927, error=0.000673
+n=100000: est=0.609730, theo=0.607927, error=0.001803
+</pre>
+
+
 Results for question `4)`:
 
 <pre>

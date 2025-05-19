@@ -18,7 +18,7 @@ def test_all_on_random_f(algos: List, N: int, n: int, repeats: int):
         @njit
         def f(i: int) -> int:
             return rand_nums[i]
-        gt = c.brute_force_deterministic(f, N, 1)
+        gt = c.brute_force_deterministic(f, N)
         gts.append(gt)
 
         # Compute the approximation algorithms.

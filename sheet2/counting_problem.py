@@ -5,13 +5,10 @@ from numba import njit
 
 
 @njit
-def brute_force_deterministic(f: Callable[[int, int], int], N: int, num_dims_per_sample: int) -> float:
-    if num_dims_per_sample == 1:
-        sum = 0
-        for i in range(N):
-            sum += f(i)
-    else:
-        raise ValueError("Higher dimensional samples not supported.")
+def brute_force_deterministic(f: Callable[[int, int], int], N: int) -> float:
+    sum = 0
+    for i in range(N):
+        sum += f(i)
 
     return sum * 1.0 / N
 
